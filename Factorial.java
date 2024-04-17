@@ -3,21 +3,22 @@
  * Program : Java
  */
 
- import java.*;
+import java.util.*;
 
  public class Factorial 
  {
      public static void main(String[] args)
      {
-         Scanner input = new Scanner(System.in);
-         System.out.println("Enter a number");
-         int Number = input.nextInt();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+        int num2 = 1;
 
-         int Factorial = 
-
-         for (int i = 1; i <= Number, i ++)
-         Factotrial = Number*i
-
-
-     }
- }
+        for(int counter = num; counter != 0; counter-- ){
+            num2 *= num;
+            num --;
+        }
+        System.out.println("The factorial is: " + num2);
+        input.close();
+    }
+}
